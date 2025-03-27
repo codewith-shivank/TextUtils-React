@@ -1,0 +1,44 @@
+.nav-link {
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0d6efd;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.navbar-brand {
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.05);
+}
+
+.navbar-brand:active {
+    transform: scale(0.95);
+}
+
+.nav-link:active {
+    transform: translateY(2px);
+}
+
+.active-nav-link {
+    color: #0d6efd !important;
+}
+
+.active-nav-link::after {
+    width: 100%;
+}
