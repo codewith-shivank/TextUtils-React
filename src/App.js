@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
-  const [mode, setMode] = useState("light"); // Whether dark mode is enabled or not
+  const [mode, setMode] = useState("light"); 
   const [alert, setAlert] = useState(null);
 
   const showAlert = (message, type) => {
