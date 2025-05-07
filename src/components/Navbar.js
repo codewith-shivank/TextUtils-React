@@ -4,6 +4,7 @@ import { Link, useLocation } from 'react-router-dom'
 import './Navbar.css'
 import { FiMoon, FiSun } from 'react-icons/fi';
 
+
 export default function Navbar(props) {
     const location = useLocation();
 
